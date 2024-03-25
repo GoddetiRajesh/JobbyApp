@@ -47,42 +47,42 @@ class Login extends Component {
     const {username, password, errMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-      return <Redirect to='/' />
+      return <Redirect to="/" />
     }
     return (
-      <div className='login-page-container'>
-        <form onSubmit={this.onSubmitForm} className='login-container'>
+      <div className="login-page-container">
+        <form onSubmit={this.onSubmitForm} className="login-container">
           <img
-            className='web-logo'
-            src='https://assets.ccbp.in/frontend/react-js/logo-img.png'
-            alt='website logo'
+            className="web-logo"
+            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+            alt="website logo"
           />
-          <label htmlFor='username' className='username-label'>
+          <label htmlFor="username" className="username-label">
             USERNAME
           </label>
           <input
             onChange={this.updateUsername}
-            id='username'
-            type='text'
-            className='username-input'
-            placeholder='Username'
+            id="username"
+            type="text"
+            className="username-input"
+            placeholder="Username"
             value={username}
           />
-          <label htmlFor='password' className='username-label'>
+          <label htmlFor="password" className="username-label">
             PASSWORD
           </label>
           <input
             onChange={this.updatePassword}
-            id='password'
-            type='password'
-            className='username-input'
-            placeholder='Password'
+            id="password"
+            type="password"
+            className="username-input"
+            placeholder="Password"
             value={password}
           />
-          <button type='submit' className='login-button'>
+          <button type="submit" className="login-button">
             Login
           </button>
-          {errMsg !== '' && <p className='error-msg'>{errMsg}</p>}
+          {errMsg !== '' && <p className="error-msg">{errMsg}</p>}
         </form>
       </div>
     )
