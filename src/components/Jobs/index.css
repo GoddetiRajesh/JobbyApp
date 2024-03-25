@@ -1,0 +1,119 @@
+.jobs-page-container {
+  background-color: black;
+  padding: 30px 40px 30px 40px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card-1-container {
+  width: 35%;
+  margin-right: 30px;
+}
+.profile-container {
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.filters-container {
+  width: 90%;
+  margin: auto;
+}
+.mobile-search-container {
+  display: none;
+}
+.card-2-container {
+  width: 65%;
+}
+.desktop-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #b6c5ff;
+  border-radius: 3px;
+  width: 50%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.search-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #f8fafc;
+  padding: 8px 15px 8px 15px;
+  width: 90%;
+}
+.search-button {
+  background-color: #272727;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+  height: 35px;
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+  color: #f1f5f9;
+}
+.no-jobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.no-jobs-image {
+  width: 50%;
+}
+.no-jobs-found-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+.no-jobs-description {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #475569;
+}
+.jobs-list-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media screen and (max-width: 765px) {
+  .jobs-page-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .card-1-container {
+    width: 90%;
+    margin-right: 0;
+  }
+  .desktop-search-container {
+    display: none;
+  }
+  .card-2-container {
+    width: 90%;
+  }
+  .mobile-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #b6c5ff;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .jobs-list-container {
+    width: 100%;
+  }
+}
